@@ -1,5 +1,8 @@
+using LHPets.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<BancoEmMemoria>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
